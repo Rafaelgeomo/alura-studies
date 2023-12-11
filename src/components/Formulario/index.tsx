@@ -1,13 +1,13 @@
 import React from "react";
 import Botao from "../Botao";
-import './style.scss';
+import style from './Formulario.module.scss';
 
 //isso é chamado de class component forma mais antiga de ser usada
 class Formulario extends React.Component {  
   render() {
     return (
-      <form className="novaTarefa">
-        <div className="inputContainer">
+      <form className={style.novaTarefa}>
+        <div className={style.inputContainer}>
           <label htmlFor="tarefa"> {/* html for serve pra que o input com o mesmo nome seja o foco quando clicado */}
             Adicione um novo estudo
           </label>
@@ -19,7 +19,7 @@ class Formulario extends React.Component {
             required
           />
         </div>
-        <div className="inputContainer">
+        <div className={style.inputContainer}>
           <label htmlFor="tempo">Tempo</label>
           <input
             type="time"
